@@ -26,13 +26,15 @@ class MyApp extends StatelessWidget {
           body: Container(
             width: double.infinity,
             child: Column(children:  [
-              SizedBox(height: 60,),
-              SizedBox(width: 110, height: 84, child: Placeholder(),),
+              SizedBox(height: 70,),
+              const SizedBox(width: 110, height: 84, child: Image(image: AssetImage('assets/8722bf5027e9c02dce3c87f92ed3d65a.png')),),
               SizedBox(height: 20,),
               Text('Введите логин в виде 10 цифр номера телефона',
-              style: TextStyle (fontSize: 16, color: Color.fromRGBO(0, 0, 0, 0.6)),),
-              const SizedBox(width: 224,
+                style: TextStyle (fontSize: 16, color: Color.fromRGBO(0, 0, 0, 0.6)),),
+              SizedBox (height: 30,),
+              const SizedBox(width: 230,
                 child: TextField(
+                  obscureText: true,
                   decoration: InputDecoration(
                     filled: true,
                     fillColor: Color(0xFFeceff1),
@@ -42,8 +44,8 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox (height: 20,),
-              const SizedBox(width: 224,
+              SizedBox (height: 30,),
+              const SizedBox(width: 230,
                 child: TextField(
                   obscureText: true,
                   decoration: InputDecoration(
@@ -55,7 +57,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 28,),
+              SizedBox(height: 30,),
               SizedBox(width: 154,height: 42, child:
                ElevatedButton(onPressed: () {},
                    child: Text('Войти'),
@@ -67,7 +69,7 @@ class MyApp extends StatelessWidget {
                  ),
                  )
               ),
-              SizedBox(height: 32,),
+              SizedBox(height: 20,),
               InkWell(child: const Text('Регистрация',style: linkTextStyle,),
                   onTap: () {}),
               SizedBox(height: 20,),
